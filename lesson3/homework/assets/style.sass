@@ -1,0 +1,442 @@
+$width: 1280px
+$font: myriad-pro, sans-serif
+$dark-color: #445162
+
+body 
+  width: $width
+  margin: 0 auto
+  font-family: $font
+
+.content-padding
+  padding-left: 50px
+  padding-right: 50px
+  padding-top: 50px
+  padding-bottom: 50px
+
+
+.dflex-between
+  display: flex
+  justify-content: space-between
+
+.product-header 
+  @extend .content-padding
+  @extend .dflex-between
+  background-color: $dark-color
+
+  .title
+    font-style: normal
+    font-weight: 500
+    font-size: 55px
+    color: #ffffff
+    line-height: 0.7
+
+  ul 
+    margin-top: 50px
+    margin-right: 50px
+    font-style: normal
+    font-weight: 500
+    font-size: 19px
+    color: #fff
+    list-style-image: none
+    margin-bottom: 0px
+
+  li
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0px
+
+  .logo 
+    width: 470px
+    height: 215px
+    background: url('img/logoo.png')
+    background-size: 470px 215px
+    flex-shrink: 0
+
+.product-description
+  @extend .dflex-between
+  @extend .content-padding
+
+  .left-content
+    display: flex
+    margin-right: 100px
+    flex-direction: column
+
+    .title 
+      width: 100%
+      color: $dark-color
+      font-size: 30px
+      font-style: normal
+      font-weight: 500
+
+    .product-text
+      margin-bottom: 20px
+      font-size: 17px
+
+  video 
+    width: 431px
+    height: 246px
+    flex-shrink: 0
+
+.product-feature 
+  @extend .content-padding
+  @extend .dflex-between
+  flex-wrap: wrap
+  background-color: #f5f5f5
+
+  .title 
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    color: $dark-color
+    font-size: 30px
+    font-style: normal
+    font-weight: 500
+
+  details 
+    width: $width / 2 - 50 - 11
+    display: block
+    margin-top: 30px
+
+  summary::-webkit-details-marker
+    display: none
+
+  summary
+    display: flex
+    outline: none
+
+  summary::before
+    width: 32px
+    height: 32px
+    content: "\002B"
+    background-color: $dark-color
+    margin-right: 10px
+    display: flex
+    flex-shrink: 0
+    justify-content: center
+    align-items: center
+    font-size: 40px
+    color: #fff
+
+  details[open] 
+    margin-top: 30px
+
+  details[open] summary 
+    margin-top: 0px
+
+  details[open] > summary::before 
+    width: 32px
+    height: 32px
+    content: "\2212"
+    background-color: $dark-color
+    margin-right: 10px
+    display: flex
+    flex-shrink: 0
+    justify-content: center
+    align-items: center
+    font-size: 40px
+    color: #fff
+
+  details > p 
+    margin-top: 0px
+    margin-left: 42px
+    margin-bottom: 0px
+
+.product-screenshots 
+  @extend .content-padding
+  @extend .dflex-between
+  flex-wrap: wrap
+
+  .title 
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    color: $dark-color
+    font-size: 30px
+    font-style: normal
+    font-weight: 500
+
+.screenshot
+  width: $width / 2 - 50
+  display: flex
+  margin: 0px
+  margin-top: 30px
+
+  img 
+    display: block
+    width: 200px
+    height: 150px
+    background-color: #445161
+    flex-shrink: 0
+    margin-right: 15px
+  figcaption 
+    color: #445161
+    font-size: 24px
+    font-style: normal
+    font-weight: 500
+  p 
+    margin: 0px
+    margin-top: 15px
+    color: #333333
+    font-size: 16px
+    font-style: normal
+    font-weight: 500
+    margin-right: 15px
+
+.product-reviews 
+  @extend .content-padding
+  @extend .dflex-between
+  flex-wrap: wrap
+  background-color: #f5f5f5
+
+  .row 
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .column
+    flex: $width / 2 - 75
+    max-width: $width / 2 - 75
+    padding: 0 0px
+
+  .title 
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    color: $dark-color
+    font-size: 30px
+    font-style: normal
+    font-weight: 500
+
+.comment-block 
+  display: flex
+  margin-top: 35px
+
+.circle 
+  height: 76px
+  width: 76px
+  background-color: #445161
+  border-radius: 50%
+  display: inline-block
+  flex-shrink: 0
+
+.comment-block p 
+  margin: 0px
+  margin-left: 32px
+  background-color: #ebebeb
+  border: 1px solid #ebebeb
+  border-radius: 5px
+  padding-top: 16px
+  padding-left: 16px
+  padding-right: 20px
+  padding-bottom: 16px
+  font-style: italic
+
+
+.product-buy 
+  @extend .content-padding
+  @extend .dflex-between
+  flex-wrap: wrap
+  justify-content: center
+  align-items: flex-end
+
+  .title 
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    color: $dark-color
+    font-size: 30px
+    font-style: normal
+    font-weight: 500
+
+
+.buy-box 
+  border: 0px solid #445162
+  width: 300px
+  margin-top: 30px
+  margin-left: 23px
+  margin-right: 23px
+  border-radius: 5px
+  display: flex
+  flex-direction: column
+  background-color: #445162
+
+
+.box-title 
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-top: 16px
+  padding-bottom: 16px
+  color: #fff
+  font-size: 24px
+
+
+.box-cost 
+  color: #445162
+  font-size: 40px
+  height: 71px
+  border-left: 2px solid #445162
+  border-right: 2px solid #445162
+  background-color: #fff
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.buy-box ol 
+  padding-right: 20px
+  padding-top: 20px
+  padding-left: 20px
+  margin: 0px
+  font-size: 14px
+  color: #fff
+  list-style-position: inside
+
+
+.buy-box li:not(:last-child) 
+  margin-bottom: 5px
+
+
+.buy-box button 
+  border: 0px solid #fff
+  border-radius: 5px
+  background-color: #fff
+  margin: 20px
+  padding: 0px
+  padding-top: 15px
+  padding-bottom: 13px
+  color: #445161
+  font-weight: 600
+
+.contacts 
+  @extend .content-padding
+  @extend .dflex-between
+  background-color: #445162
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  .title 
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    font-size: 30px
+    font-style: normal
+    font-weight: 500
+
+
+.contacts-left 
+  width: 50%
+  display: flex
+  flex-direction: column
+  margin: 20px
+  margin-top: 30px
+  align-items: center
+
+
+.contacts-left input 
+  width: 100%
+  border: 0px solid #fff
+  border-radius: 5px
+  height: 41px
+  margin-bottom: 20px
+  padding-left: 11px
+  padding-right: 11px
+  font-size: 16px
+
+
+::placeholder 
+  color: #445162
+  font-size: 16px
+
+
+.contacts-left textarea 
+  width: 100%
+  border: 0px solid #fff
+  border-radius: 5px
+  height: 171px
+  margin-bottom: 20px
+  padding: 11px
+  font-size: 16px
+
+
+.contacts-left button 
+  width: 140px
+  border: 0px solid #fff
+  border-radius: 5px
+  background-color: #fff
+  padding: 0px
+  font-size: 16px
+  padding-top: 14px
+  padding-bottom: 14px
+  color: #445161
+  font-weight: 600
+  justify-content: center
+  align-items: center
+
+
+.contacts-right 
+  display: flex
+  flex-direction: column
+  margin: 20px
+  margin-top: 30px
+  font-size: 16px
+
+
+.contacts-right span 
+  display: flex
+  align-items: center
+  margin-bottom: 18px
+
+
+.contacts-right i 
+  font-size: 26px
+  margin-right: 5px
+
+
+.contacts a 
+  text-decoration: none
+
+
+.social 
+  margin-top: 6px
+
+
+.social [class*='fa fa-'] 
+  background-color: #fff
+  border-radius: 30px
+  color: #445162
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  margin: auto 3px
+  width: 30px
+  font-size: 15px
+  text-align: center
+
+
+.fg-white 
+  color: #fff
+
+
+.fg-dark 
+  color: #445162
+
+.bg-white 
+  background-color: #fff
+
+
+footer 
+  display: flex
+  justify-content: center
+  padding-top: 5px
+  padding-bottom: 5px
+  font-size: 12px
+  color: #445162
+
