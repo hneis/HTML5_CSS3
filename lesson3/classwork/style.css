@@ -1,0 +1,53 @@
+.header {
+  width: 600px;
+  margin: 0 auto;
+  height: 100px;
+  background-color: green;
+  border-width: 2px;
+  border-style: solid;
+  border-color: purple;
+}
+
+.dflex, .menu, .header {
+  display: flex;
+}
+
+.menu li {
+  list-style-type: none;
+}
+.menu a {
+  color: red;
+  padding: 15px;
+}
+.menu a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.main {
+  width: 600px;
+  margin: 0 auto;
+  background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 198px;
+  height: 200px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.footer {
+  width: 600px;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #ccc;
+  border-width: 4px;
+  border-style: solid;
+  border-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
