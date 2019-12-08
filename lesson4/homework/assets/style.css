@@ -177,6 +177,39 @@ nav .navbar-nav li a:hover {
   transform: translateX(-330px);
 }
 
+.row-3 {
+  background: linear-gradient(90deg, #231c1a, #4c3326);
+  padding: 25px 15px;
+}
+
+.col-learn {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto !important;
+}
+
+.learn-title {
+  color: #c7b299;
+  font-size: 28px;
+}
+
+.learn-text {
+  color: #615855;
+  font-size: 18px;
+}
+
+.button-learn {
+  height: 50px !important;
+  background-color: #998675;
+  border-radius: 5px;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 30px;
+  color: #fff;
+  margin: auto 0;
+}
+
 /* .white { */
 /*   width: 100%; */
 /*   background-color: #fff; */
